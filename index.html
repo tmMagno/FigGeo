@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FigGeo</title>
+
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!--Encabezado-->
+
+    <header class="header">
+        <h1 class="header-title">FigGeo </h1>
+        <p class="header-description">
+            Te permite calcular diferentes medidas de figuras Geometricas como area y perimetro.
+        </p>
+    </header>
+
+<!--Respuesta-->
+
+    <div class="answer">
+        <p id="result"> </p>
+    </div>
+
+    <!--Cajas de calculos-->
+
+    <section class="figures">
+        <div class="box">
+            <div class="box-header">
+                <h2>Cuadrado</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">¿Cuanto mide cada lado de tu cuadrado?</p> 
+                <input class="box-main__input"
+                 type="number"
+                 name="inputSide"
+                 id="inputSide"
+                 placeholder="Ingrese los lados"
+                 >
+                <button class="box-main__btn" type="button" onclick="calculatePerimSquare()">Perimetro</button>  
+                <button class="box-main__btn" type="button" onclick="calculateAreaSquare()">Area</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <h2>Triangulo</h2>
+            </div>
+            <div class="box-main">
+                <p class="box-main__text">¿Cuanto mide cada lado de tu triangulo?</p> 
+                <input class="box-main__input"
+                 type="number"
+                 name="inputside1"
+                 id="inputside1"
+                 placeholder="Ingrese lado 1"
+                 >
+                 <input class="box-main__input"
+                 type="number"
+                 name="inputside2"
+                 id="inputside2"
+                 placeholder="Ingrese lado 2"
+                 >
+                 <input class="box-main__input"
+                 type="number"
+                 name="inputside3"
+                 id="inputside3"
+                 placeholder="Ingrese lado 3"
+                 >
+                <button class="box-main__btn" type="button" onclick="calculateperimTriangle()">Perimetro</button>  
+               
+                <p class="box-main__text">¿Cuanto mide la base y altura de tu triangulo?</p>
+                <input class="box-main__input"
+                 type="number"
+                 name="inputBase"
+                 id="inputBase"
+                 placeholder="Ingrese Base"
+                 >
+                 <input class="box-main__input"
+                 type="number"
+                 name="inputHeight"
+                 id="inputHeight"
+                 placeholder="Ingrese Altura"
+                 >
+                 <button class="box-main__btn" type="button">Area</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <h2>Circulo</h2>
+            </div>
+            <div class="box-main"> 
+                <p class="box-main__text">¿Cuanto mide el radio de tu circulo?</p>
+                <input class="box-main__input"
+                 type="number"
+                 name="inputRadio"
+                 id="inputRadio"
+                 placeholder="Ingrese Base"
+                 >
+                 <input class="box-main__input"
+                 type="number"
+                 name="inputRadio"
+                 id="inputRadio"
+                 placeholder="Ingrese Radio"
+                 >
+                 <button class="box-main__btn" type="button" onclick="calculateDiamCircle()">Diametro</button>
+                 <button class="box-main__btn" type="button" onclick="calculatePerimCicle()">Perimetro</button>
+                 <button class="box-main__btn" type="button" onclick="calculateAreaCicle()">Area</button>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="JS/geometric.js"></script>
+</body>
+</html>
